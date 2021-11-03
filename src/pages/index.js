@@ -23,7 +23,7 @@ export default function Home({ countries }) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch("https://restcountries.com/v2/all")
   const countries = await response.json()
   return {
