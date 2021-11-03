@@ -1,0 +1,14 @@
+@tailwind base;
+
+@layer base {
+  @import "./variables.css";
+  body {
+    @apply w-full h-full min-h-screen bg-gray-200 text-gray-400;
+  }
+  body.dark {
+    @apply w-full h-full min-h-screen bg-black text-gray-400;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
